@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.head.Header"
+    android:layout_margin="30dp"
+    android:background="@color/FA"
+    android:id="@+id/headking">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/User_head"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/touxiang"
+        />
+    <TextView
+        android:id="@+id/User_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User_name"
+        android:textSize="25sp"
+        android:layout_toRightOf="@id/User_head"
+        android:layout_marginLeft="20dp"/>
+
+    <CheckBox
+        android:id="@+id/Online_check"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/online"
+        android:button="@null"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/User_name"
+        android:layout_toRightOf="@id/User_head"/>
+    <TextView
+        android:id="@+id/Online_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/offline"
+        android:layout_toRightOf="@id/Online_check"
+        android:layout_below="@id/User_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:textSize="20sp" />
+</RelativeLayout>

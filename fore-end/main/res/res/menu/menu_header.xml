@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/g1">
+
+        <item
+            android:id="@+id/dingdan"
+            android:title="@string/dingdan"/>
+
+    </group>
+    <group
+        android:id="@+id/g2">
+        <item
+            android:id="@+id/tiezi"
+            android:title="@string/tiezi"/>
+        <item
+            android:id="@+id/shoucang"
+            android:title="@string/favorite"/>
+        <item
+            android:id="@+id/jilu"
+            android:title="@string/jilu"/>
+        <item
+            android:id="@+id/huida"
+            android:title="@string/huida"/>
+
+    </group>
+    <group
+        android:id="@+id/g3">
+        <item
+            android:id="@+id/set"
+            android:title="@string/set"/>
+        <item
+            android:id="@+id/about"
+            android:title="@string/about"/>
+    </group>
+
+</menu>

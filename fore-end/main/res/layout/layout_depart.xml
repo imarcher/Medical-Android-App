@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/depart"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Department"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:background="@drawable/depart_unchecked"/>
+
+</RelativeLayout>

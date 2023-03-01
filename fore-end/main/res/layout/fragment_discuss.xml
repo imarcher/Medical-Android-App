@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.discuss.DisFragment"
+    android:gravity="center">
+        <EditText
+            android:id="@+id/filter_post"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:hint="搜索你想要的帖子"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:maxLines="1" />
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/put"
+            android:layout_width="270dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/filter_post"
+            android:layout_marginTop="60dp"
+            android:background="#FA8072"
+            android:text="发布帖子"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+
+</RelativeLayout>

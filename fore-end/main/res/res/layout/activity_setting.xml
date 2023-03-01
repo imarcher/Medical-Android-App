@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context=".ui.head.Setting">
+
+    <LinearLayout
+        android:id="@+id/set_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/FA"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/set_touxing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+
+            android:drawableRight="@drawable/icon_arrow_right_grey"
+            android:text="@string/touxiang"
+            android:textSize="20sp" />
+
+        <View style="@style/Divider" />
+
+        <TextView
+            android:id="@+id/set_nicheng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_touxing"
+            android:layout_margin="15dp"
+            android:drawableRight="@drawable/icon_arrow_right_grey"
+            android:text="@string/nicheng"
+            android:textSize="20sp" />
+
+        <View style="@style/Divider" />
+
+        <TextView
+            android:id="@+id/set_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_touxing"
+            android:layout_margin="15dp"
+            android:drawableRight="@drawable/icon_arrow_right_grey"
+            android:text="@string/pass"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/zhuxiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_lin"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="60dp"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:text="@string/zhuxiao"
+        android:textColor="@color/red"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+    <ImageView
+        android:id="@+id/register_icon"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/icon_register"/>
+
+    <EditText
+        android:layout_below="@id/register_icon"
+        android:id="@+id/register_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="用户名"
+        android:maxLines="1"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_shape"/>
+
+    <EditText
+        android:id="@+id/register_pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/register_name"
+        android:layout_marginTop="15dp"
+        android:hint="@string/pass"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_shape"/>
+
+    <EditText
+        android:id="@+id/define_pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/register_pass"
+        android:layout_marginTop="15dp"
+        android:hint="@string/set_define_pass"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_shape"/>
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/register"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/define_pass"
+        android:layout_marginTop="30dp"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:background="@drawable/login_green"
+        android:textSize="25sp" />
+</RelativeLayout>

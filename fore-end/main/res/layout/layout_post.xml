@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/post_whole"
+    android:orientation="horizontal">
+
+
+
+
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/dingdan_background">
+
+
+
+
+        <TextView
+            android:id="@+id/post_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/check_box"
+            android:text="PostName"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_touxiang"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/post_name"
+            android:layout_marginTop="12dp"
+
+            android:src="@drawable/touxiang" />
+        <TextView
+            android:id="@+id/post_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/post_name"
+            android:layout_toRightOf="@id/user_touxiang"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:text="username"
+            android:textColor="@color/deep"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:id="@+id/check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_alignParentRight="true"
+
+            android:src="@drawable/deletess"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/post_time"
+            android:layout_below="@id/post_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/check_box"
+            android:layout_toRightOf="@id/post_username"
+            android:layout_marginLeft="100dp"
+            android:text="2000-02-20 08:00:00"
+            android:textColor="@color/deep"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

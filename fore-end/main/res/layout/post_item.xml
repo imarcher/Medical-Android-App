@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/post_id"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp">
+
+
+
+
+        <TextView
+            android:id="@+id/post_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:text="PostName"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            android:layout_below="@id/user_touxiang"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_touxiang"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="12dp"
+
+            android:src="@drawable/touxiang" />
+        <TextView
+            android:id="@+id/post_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/user_touxiang"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:text="用户名"
+            android:textColor="@color/deep"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/post_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/post_name"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="-55dp"
+            android:layout_toRightOf="@id/post_username"
+            android:text="帖子更新时间"
+            android:textColor="@color/deep"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

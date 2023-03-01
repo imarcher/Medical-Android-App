@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/dingdan_whole">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/dingdan_background">
+
+        <TextView
+            android:id="@+id/dingdan_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="DocName"
+            android:textColor="@color/text_color"
+            android:textSize="25sp" />
+
+        <TextView
+        android:id="@+id/dingdan_depart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/dingdan_name"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="DocDepart"
+        android:textColor="@color/light"
+        android:textSize="15sp" />
+        <TextView
+            android:id="@+id/dingdan_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dingdan_name"
+            android:layout_marginTop="15dp"
+            android:text="Time"
+            android:textColor="@color/deep"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/dingdan_guoqi"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="已结束"
+            android:textColor="@color/red"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/dingdan_pingjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可评价"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/dingdan_guoqi"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/light"/>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FA"
+    tools:context=".ui.doctor.DoctorFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_margin="15dp"
+        android:id="@+id/doctor_my"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/touxiang"
+
+        />
+
+    <EditText
+        android:id="@+id/doc_search"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/doctor_my"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="10dp"
+        android:maxLines="1" />
+    <LinearLayout
+        android:layout_below="@id/doc_search"
+        android:id="@+id/doc_line"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_weight="1"
+            android:id="@+id/doc_scroll_l"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <!--       <RadioGroup
+                       android:id="@+id/depart_group"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                       <RadioButton
+                           android:id="@+id/r2"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="全部"
+                           android:padding="12dp"
+                           android:maxLines="1"
+                           android:textSize="15sp"
+                           android:bu="@null"
+                           android:background="@drawable/depart_checked"/>
+
+         全部", "妇产科", "男科", "儿科", "皮肤科", "心理咨询", "内科",
+       "外科", "骨科", "眼科", "耳鼻喉科", "口腔科", "中医科", "肿瘤科",
+                       "营养科", "传染病科", "全科/
+                       <RadioButton
+                           android:id="@+id/r1"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="妇产科"
+                           android:padding="12dp"
+                           android:maxLines="1"
+                           android:textSize="15sp"
+                           android:button="@null"
+                           android:background="@drawable/depart_checked"/>
+                       <RadioButton
+                           android:id="@+id/r3"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="全部"
+                           android:padding="12dp"
+                           android:maxLines="1"
+                           android:textSize="15sp"
+                           android:button="@null"
+                           android:background="@drawable/depart_checked"/>
+
+
+                   </RadioGroup>-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/doc_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+        </ScrollView>
+
+
+
+
+
+        <ScrollView
+            android:layout_weight="5"
+            android:id="@+id/doc_scroll_r"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/doc_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

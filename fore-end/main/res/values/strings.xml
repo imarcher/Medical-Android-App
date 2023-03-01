@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">demo</string>
+    <string name="rongyunApp_key">x18ywvqfx50ac</string>
+    <string name="rongyunApp_Secret">IRn743h50l</string>
+    <string name="rongyunip">https://api-cn.ronghub.com/user/getToken.json</string>
+    <string name="qiniuyunApp_key">GIUfL1VLF_v5U4bvCH_6YuWSkXHMH1c3x4mxJZyK</string>
+    <string name="qiniuyunip">http://qf0834heq.hd-bkt.clouddn.com/</string>
+    <string name="myip">http://192.168.124.5:5000</string><!--使用时自己加/-->
+
+    <string name="it1">论坛</string>
+    <string name="it2">医生</string>
+    <string name="it3">会话</string>
+    <string name="it4">好友</string>
+    <string name="online">在线</string>
+    <string name="offline">离线</string>
+    <string name="dingdan">订单</string>
+    <string name="zhenduan">诊断报告</string>
+    <string name="tiezi">我的帖子</string>
+    <string name="huida">我的回答</string>
+    <string name="jilu">浏览记录</string>
+
+    <string name="set">设置</string>
+    <string name="about">关于</string>
+    <string name="favorite">我的收藏</string>
+    <string name="touxiang">头像</string>
+    <string name="nicheng">昵称</string>
+    <string name="pass">密码</string>
+    <string name="zhuxiao">退出登录</string>
+    <string name="set_pass">新的密码</string>
+    <string name="set_define_pass">确认密码</string>
+    <string name="define">确定</string>
+    <string name="old_pass">原密码</string>
+
+
+</resources>

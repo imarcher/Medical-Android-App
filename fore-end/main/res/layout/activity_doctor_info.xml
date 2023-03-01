@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/F5"
+    android:orientation="vertical"
+    tools:context=".ui.doctor.DoctorInfo">
+    <RelativeLayout
+        android:id="@+id/dingdan_rela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/FA">
+        <ImageView
+            android:id="@+id/doc_back"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="姓名，科室"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/bot_checked"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/info_renzheng"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="28dp"
+                    android:src="@drawable/renzheng" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/info_renzheng"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="25dp"
+                    android:text="已认证"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/info_touxiang"
+                    android:layout_width="79dp"
+                    android:layout_height="109dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="2dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/yisheng" />
+
+                <TextView
+                    android:id="@+id/info_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/info_touxiang"
+                    android:text="DocName"
+                    android:textColor="@color/text_color"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/info_pos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/info_name"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/info_touxiang"
+                    android:text="DocPos"
+                    android:textColor="@color/light"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/info_yiyuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/info_shanchang"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toRightOf="@id/info_touxiang"
+                    android:text="DocYiyuan"
+                    android:textColor="@color/light"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/info_shanchang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/info_touxiang"
+                    android:layout_alignParentStart="true"
+                    android:layout_toEndOf="@id/info_touxiang"
+                    android:text="DocShanchang_____________________________________________________"
+                    android:textColor="@color/deep"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bot_checked"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/info_fuwu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="服务内容:"
+                    android:textColor="@color/text_color" />
+                <TextView
+                    android:id="@+id/info_zaixian"
+                    android:drawableLeft="@drawable/ic_offline"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="医生离线"
+                    android:textColor="@color/text_color" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/info_fuwu"
+                    android:layout_margin="32dp"
+                    android:src="@drawable/ic_zixun_blue" />
+
+                <Button
+                    android:id="@+id/info_zixun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/info_fuwu"
+                    android:layout_marginTop="10dp"
+                    android:padding="30dp"
+                    android:background="@drawable/ic_zixun_stroke"
+                    android:gravity="center_vertical"
+                    android:text="             在线咨询"
+                    android:textSize="22sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/bot_checked">
+
+                <TextView
+                    android:layout_margin="15dp"
+                    android:id="@+id/info_pingjia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="病人评价:"
+                    android:textColor="@color/text_color" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_below="@id/info_pingjia"
+                    android:id="@+id/info_pingjia_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
